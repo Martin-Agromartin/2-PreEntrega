@@ -21,7 +21,7 @@ main {
 /*Flexbox para todos los footer*/
 .footer {
     background-color: #333;
-    color: white;
+    color:yellow;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
