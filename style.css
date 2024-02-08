@@ -1,0 +1,181 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+.inicio img {
+    width: 100%;
+    height: 70%;
+}
+
+.centro-imagen img {
+    width: 40%;
+    margin: 10px;
+}
+
+/*Flexbox para todos los footer*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mapa {
+    margin-bottom: 0; 
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px; 
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: white ; 
+    border: 1px solid #000;
+    padding: 5px 10px; 
+    border-radius: 5px; /
+}
+
+/*Estilo de Promociones*/
+.promocion-full-width img {
+    width: 100%;
+    height: auto;
+}
+
+.promociones-container:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.promociones-container img {
+    width: 45%; 
+    margin: 10px;
+}
+/*Fin de estilo de promociones*/
+
+/*Estilo Productos*/
+.productos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.productos-container img {
+    width: 45%; 
+    margin: 10px;
+}
+/*fin estilo productos*/
+
+/*Esitlo Empresa*/
+.empresa img {
+    width: 50%; 
+    height: 600px;
+}
+.empresa p {
+    font-size: 30px;
+}
+/*Footer*/
+#texto{
+    display: inline-block;
+    vertical-align:sub;
+}
+
+/*Pseudoclases*/
+
+.promo:hover {
+    transform: scale(0.5);
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+/*Pseudoelementos*/
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+/*Grid*/
+.container{
+  border: 2px solid #656363;
+  padding: 5px;
+  margin-top: 0;
+  display: grid;
+}
+
+.sucursal1 {
+    background-color: aliceblue;
+    margin-top: 0;
+}
+
+.sucursal2 {
+    background-color: #656363
+}
+
+/* Responsive Desktop */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .contenido-empresa {
+        flex-direction: column;
+    }
+
+    .empresa,
+    .video-container {
+        margin-right: 0;
+    }
+}
+
+/* Responsive Desktop */
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navbar-nav a {
+        margin: 5px 0;
+    }
+
+    .contenido-empresa {
+        flex-direction: column;
+    }
+
+    .empresa,
+    .video-container {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+}
