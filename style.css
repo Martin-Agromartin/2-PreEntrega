@@ -11,6 +11,7 @@ main {
 .inicio img {
     width: 100%;
     height: 70%;
+    display: flex;
 }
 
 .centro-imagen img {
@@ -86,6 +87,7 @@ main {
 }
 .empresa p {
     font-size: 30px;
+    display: flex;
 }
 /*Footer*/
 #texto{
@@ -127,7 +129,7 @@ p{
 }
 
 /* Responsive Desktop */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         padding: 10px;
     }
@@ -146,8 +148,8 @@ p{
     }
 }
 
-/* Responsive Desktop */
-@media (max-width: 991px) {
+/* Responsive Mobile */
+@media screen and (max-width: 480px) {
     .navbar-nav {
         flex-direction: column;
         text-align: left;
@@ -177,7 +179,7 @@ p{
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .container {
         padding: 0 10px;
     }
