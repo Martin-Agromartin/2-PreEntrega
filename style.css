@@ -169,7 +169,7 @@ p{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     header {
         padding: 10px;
     }
