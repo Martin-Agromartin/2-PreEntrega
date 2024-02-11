@@ -87,8 +87,8 @@ main {
 }
 .empresa p {
     font-size: 30px;
-    display: flex;
 }
+
 /*Footer*/
 #texto{
     display: inline-block;
