@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -9,13 +12,13 @@ main {
 }
 
 .inicio img {
-    width: 100%;
-    height: 70%;
-    display: flex;
+    max-width: 100%;
+    max-height: 70%;
 }
 
 .centro-imagen img {
-    width: 40%;
+    max-width: 40%;
+    height: auto;
     margin: 10px;
 }
 
@@ -30,9 +33,9 @@ main {
     text-align: center;
 }
 
-.mapa {
-    margin-bottom: 0;
-    display: flex;
+iframe {
+    width: 90%;
+    height: 40%;
 }
 
 .redes-sociales {
@@ -50,7 +53,7 @@ main {
 
 /*Estilo de Promociones*/
 .promocion-full-width img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -82,8 +85,8 @@ main {
 
 /*Esitlo Empresa*/
 .empresa img {
-    width: 50%; 
-    height: 600px;
+    max-width: 100%; 
+    height: auto;
 }
 .empresa p {
     font-size: 30px;
@@ -110,26 +113,31 @@ p{
 }
 
 /*Grid*/
-.container{
-  border: 2px solid #656363;
-  padding: 5px;
-  margin-top: 0;
-  display: grid;
-  height: auto;
-  max-width: 100%;
-  }
-
-.sucursal {
-    background-color: aliceblue;
-    margin-top: 0;
+main.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-.sucursal2 {
-    background-color: #656363
+.sucursal, .sucursal2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
+
+.suc1, .suc2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Responsive Desktop */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     header {
         padding: 10px;
     }
@@ -149,41 +157,15 @@ p{
 }
 
 /* Responsive Mobile */
-@media screen and (max-width: 480px) {
-    .navbar-nav {
+@media screen and (max-width: 400px) {
+    .footer {
+        background-color: #ad0e0e;
+        color:rgb(16, 16, 12);
+        padding-top: 10px;
+        display: flex;
         flex-direction: column;
-        text-align: left;
-    }
-
-    .navbar-nav a {
-        margin: 5px 0;
-    }
-
-    .contenido-empresa {
-        flex-direction: column;
-    }
-
-    .empresa,
-    .video-container {
-        margin-right: 0;
+        align-items: center;
+        text-align: center;
     }
 }
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 10px;
-    }
-}
-
-
 
