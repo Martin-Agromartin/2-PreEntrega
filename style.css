@@ -22,6 +22,17 @@ main {
     margin: 10px;
 }
 
+.video {
+    max-width: 70%;
+    margin: auto;
+  }
+
+  video {
+    width: 70%;
+    height: auto;
+  }
+
+
 /*Flexbox para todos los footer*/
 .footer {
     background-color: #333;
@@ -40,6 +51,7 @@ iframe {
 
 .redes-sociales {
     display: flex;
+    justify-content: space-around;
     gap: 10px; 
 }
 
