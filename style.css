@@ -52,15 +52,119 @@ iframe {
 .redes-sociales {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     gap: 10px; 
 }
 
 .redes-sociales a {
     text-decoration: none;
-    color: white ; 
-    border: 1px solid #000;
+    text-transform: uppercase;
+    color: #03e9f4;
+    font-size: 15px; 
     padding: 5px 10px; 
-    border-radius: 5px; /
+    border-radius: 5px; 
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    letter-spacing: 4px;
+}
+
+/* animacion */
+.redes-sociales a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%
+    {
+        left: -100%;
+    }
+    50%, 100%
+    {
+        left:100%;
+    }
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%
+    {
+        top: -100%;
+    }
+    50%, 100%
+    {
+        top:100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3{
+    0%
+    {
+        right: -100%;
+    }
+    50%, 100%
+    {
+        right:100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%, 100%
+    {
+        bottom: 100%;
+    }
 }
 
 /*Estilo de Promociones*/
