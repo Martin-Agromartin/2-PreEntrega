@@ -1,0 +1,16 @@
+.promocion-full-width img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promociones-container:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+        width: 45%;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,16 @@
+@mixin social-media-animation($delay: 0s) {
+    animation: social-media-animate 1s linear infinite;
+    animation-delay: $delay;
+}
+
+@keyframes social-media-animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

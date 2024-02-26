@@ -1,0 +1,15 @@
+#texto {
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.promo:hover {
+    transform: scale(0.5);
+    transition: all 1s;
+    opacity: 0.5;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}

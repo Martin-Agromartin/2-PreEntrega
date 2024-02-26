@@ -1,0 +1,32 @@
+// Responsive Desktop 
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .contenido-empresa {
+        flex-direction: column;
+    }
+
+    .empresa,
+    .video-container {
+        margin-right: 0;
+    }
+}
+
+// Responsive Mobile 
+@media screen and (max-width: 400px) {
+    .footer {
+        background-color: #ad0e0e;
+        color: rgb(16, 16, 12);
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

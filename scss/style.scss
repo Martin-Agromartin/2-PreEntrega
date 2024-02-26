@@ -1,0 +1,24 @@
+// Resets y configuraciones iniciales
+@import '../scss/base/reset';
+
+// Variables y mapas
+@import '../scss/base/color'; 
+
+// Mixins y funciones
+@import '../scss/base/mixins'; 
+
+// Estilos de la estructura general
+@import '../scss/base/body';
+@import '../scss/base/main';
+
+// Estilos de secciones específicas
+@import '../scss/components/inicio';
+@import '../scss/components/centro-imagen';
+@import '../scss/components/video';
+@import '../scss/components/footer';
+@import '../scss/components/promociones';
+@import '../scss/components/productos';
+@import '../scss/components/empresa';
+@import '../scss/components/footer-styles';
+@import '../scss/base/grid';
+@import '../scss/base/responsive';
